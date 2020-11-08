@@ -7,7 +7,7 @@ import ContactList from "../ContactList/ContactList";
 import Logo from "../Logo/Logo";
 import Notification from "../Notification/Notification";
 
-import LogoSlideTransition from "../CSSTransitions/slide.module.css";
+import LogoSlideTransition from "../CSSTransitions/slideLogo.module.css";
 import PopTransition from "../CSSTransitions/pop.module.css";
 
 import { v4 as uuidv4 } from "uuid";
@@ -114,7 +114,7 @@ class App extends Component {
         <div className="App">
           <CSSTransition
             in={didMount}
-            timeout={250}
+            timeout={500}
             classNames={LogoSlideTransition}
             appear
           >
